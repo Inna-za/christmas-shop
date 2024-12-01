@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Christmas Shop</title>
+    <link rel="icon" type="image/x-icon" href="img/snowflake.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,29 +17,188 @@
       href="https://fonts.googleapis.com/css2?family=Allura&family=Kalnia+Glaze:wght@100..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <link rel="stylesheet" href="style.css" />
-  <body>
-    <div class="header">
-      <div class="menu">
-        <div class="nav-item header-logo">THE GIFTS</div>
-        <div class="nav">
-          <div class="nav-item">GIFTS</div>
-          <div class="nav-item">ABOUT</div>
-          <div class="nav-item">BEST</div>
-          <div class="nav-item">CONTACT</div>
+  <body class="root">
+    <div class="all">
+      <header class="header">
+        <div class="menu">
+          <a class="header-logo" href="index.html">
+            <img class="icon" src="img/snowflake.svg" alt="snowflake" />
+            <span class="nav-item"> THE GIFTS</span>
+          </a>
+          <div class="nav">
+            <a class="nav-item nav-menu" href="gifts.html">GIFTS</a>
+            <a class="nav-item nav-menu" href="index.html">ABOUT</a>
+            <a class="nav-item nav-menu" href="index.html">BEST</a>
+            <a class="nav-item nav-menu" href="#contacts">CONTACT</a>
+          </div>
+        </div>
+        <div class="hamburger" id="hamburger">&#9776;</div>
+      </header>
+      <div class="content">
+        <div class="caption">Merry Christmas</div>
+        <h1 class="header-1">
+          Gift yourself <br />
+          the magic of new <br />
+          possibilities
+        </h1>
+        <a href="gifts.html"><button>Explore Magical Gifts</button></a>
+        <div class="caption">and Happy New Year</div>
+      </div>
+      <div class="about about-container">
+        <div class="text-about about-item">
+          <span class="caption red">About</span>
+          <div class="header-2">Unleash your inner superhero!</div>
+          <span class="paragraph">
+            This New Year marks the beginning of your journey to inner harmony
+            and new strengths. We offer unique gifts that will help you improve
+            your life.
+          </span>
+        </div>
+        <div class="about-item">
+          <img class="img-in-text" src="img/santa.png" alt="santa with olaf" />
         </div>
       </div>
-    </div>
-    <div class="content">
-      <div class="caption">Merry Christmas</div>
-      <div class="header-1">
-        Gift yourself <br />
-        the magic of new <br />
-        possibilities
+      <div class="best-gifts-section">
+        <p class="caption">Become Happier!</p>
+        <p class="header-2 white">in the new 2025</p>
+        <div class="container">
+          <div class="slider-wrapper">
+            <div class="slider">
+              <div id="slider-1" class="slider-block">
+                <span class="slider-text">Live</span>
+              </div>
+              <div id="slider-2" class="slider-block">
+                <img src="img/snowman.png" alt="snowman" />
+              </div>
+              <div id="slider-3" class="slider-block">
+                <span class="slider-text">Create</span>
+              </div>
+              <div id="slider-4" class="slider-block">
+                <img src="img/christmas-trees.png" alt="pinetrees" />
+              </div>
+              <div id="slider-5" class="slider-block">
+                <span class="slider-text">Love</span>
+              </div>
+              <div id="slider-6" class="slider-block">
+                <img
+                  src="img/christmas-tree-ball.png"
+                  alt="christmas ornaments"
+                />
+              </div>
+              <div id="slider-7" class="slider-block">
+                <span class="slider-text">dream</span>
+              </div>
+              <div id="slider-8" class="slider-block">
+                <img src="img/fairytale-house.png" alt="hous" />
+              </div>
+            </div>
+            <div class="slider-nav">
+              <button class="prev">&#8592;</button>
+              <button class="next">&#8594;</button>
+            </div>
+          </div>
+        </div>
       </div>
-      <button>Explore Magical Gifts</button>
-      <div class="caption">and Happy New Year</div>
+      <section class="best-gifts-section-card">
+        <p class="caption">Best Gifts</p>
+        <p class="header-2">especially for you</p>
+        <div class="container-card">
+          <div class="card action-item">
+            <img src="img/image.png" alt="present in ornament" />
+            <div class="card-text">
+              <p class="category header-4 category-for-work">for work</p>
+              <h3>Console.log Guru</h3>
+            </div>
+          </div>
+          <div class="card action-item">
+            <img
+              src="img/Image-Container-2.png"
+              alt="present in ornament"
+            />
+            <div class="card-text">
+              <p class="category header-4 category-for-health">for health</p>
+              <h3>Hydration Bot</h3>
+            </div>
+          </div>
+          <div class="card action-item">
+            <img src="img/image.png" alt="present in ornament" />
+            <div class="card-text">
+              <p class="category header-4 category-for-work">for work</p>
+              <h3>Merge Master</h3>
+            </div>
+          </div>
+          <div class="card action-item">
+            <img src="img/Image-Container.png" alt="present in ornament" />
+            <div class="card-text">
+              <p class="category header-4 category-for-harmony">for harmony</p>
+              <h3>Spontaneous Coding Philosopher</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="CTA">
+        <div class="background-CTA">
+          <div class="text-CTA">
+            <h2 class="header-CTA">
+              Ready to start your journey to a better version of yourself?
+            </h2>
+            <a href="gifts.html"><button>Explore Magical Gifts</button></a>
+            <p class="caption">The New Year is Coming Soon...</p>
+            <div class="timer">
+              <span id="days" class="date-info">
+                <span class="header-2">47</span>
+                <span class="header-4">days</span>
+              </span>
+              <div class="vr"></div>
+              <span id="hours" class="date-info"
+                ><span class="header-2">5</span>
+                <span class="header-4">hours</span></span
+              >
+              <div class="vr"></div>
+              <span id="minutes" class="date-info"
+                ><span class="header-2">34</span>
+                <span class="header-4">minutes</span></span
+              >
+              <div class="vr"></div>
+              <span id="seconds" class="date-info"
+                ><span class="header-2">12</span>
+                <span class="header-4">seconds</span></span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <foter id="contacts" class="footer">
+        <div class="footer-container">
+          <a class="footer-card action-item" href="tel:3752911122-33">
+            <img src="img/santa-claus.svg" alt="santa-draw" />
+            <p class="action-big">+375 (29) 111-22-33</p>
+            <h3>Call Us</h3>
+          </a>
+          <a class="footer-card action-item" target="_blank" href="https://maps.app.goo.gl/iTVekNZM9Z36hzPN8">
+            <img src="img/christmas-tree.svg" alt="tree draw" />
+            <p class="action-big">Magic forest</p>
+            <h3>meet us</h3>
+          </a>
+        <a class="footer-card action-itemr" href="mailto:gifts@magic.com">
+            <img src="img/snake.svg" alt="snare draw" />
+            <p class="action-big">gifts@magic.com</p>
+            <h3>write us</h3>
+          </div>
+        </a>
+        <div class="socia-media">
+          <img src="img/telegram.svg" alt="telegram logo" />
+          <img src="img/Vector-2.svg" alt="facebook logo" />
+          <img src="img/instagram.svg" alt="instagram logo" />
+          <img src="img/X.svg" alt="X logo" />
+        </div>
+        <p class="paragraph">© Copyright 2025, All Rights Reserved</p>
+        <p class="caption"><a target="_blank" href="https://rs.school/"
+        >Made in Rolling Scopes School</a
+      ></p>
+      </foter>
     </div>
   </body>
 </html>
